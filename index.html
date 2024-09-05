@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Health Monitor System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Health Monitor System</h1>
+        <form id="healthForm">
+            <label for="waterIntake">Water Intake (liters):</label>
+            <input type="number" id="waterIntake" name="waterIntake" step="0.1" min="0" required>
+            
+            <label for="sleepHours">Sleep Hours:</label>
+            <input type="number" id="sleepHours" name="sleepHours" step="0.1" min="0" required>
+            
+            <label for="stepsPerDay">Steps Per Day:</label>
+            <input type="number" id="stepsPerDay" name="stepsPerDay" min="0" required>
+            
+            <label for="caloriesIntake">Calories Intake:</label>
+            <input type="number" id="caloriesIntake" name="caloriesIntake" min="0" required>
+            
+            <button type="button" onclick="generateReport()">Generate Report</button>
+        </form>
+        
+        <div id="report"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
